@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevEveryday - Receipts - Parmegiana</title>
+    <title>DevEveryday - Receipts - Parmegianna</title>
     <style>
-
         #container {
             border: 3px solid rgba(250, 122, 2, 0.829);
             padding-left: 1pt;
             padding-right: 1pt;
             width: 100%;
-            max-width: 1300px;
+            max-width: 1100px;
             margin-left: auto;
             margin-right: auto;
             font-family: sans-serif;
         }
 
-        #container img{
-            width: 100%;
+        #container img {
+            height: 300px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         main {
@@ -47,10 +49,6 @@
         li:hover {
             opacity: 0.7;
         }
-
-        .anime-roll {}
-
-
 
         .marquee {
             overflow: hidden;
@@ -91,8 +89,8 @@
                 animation-iteration-count: 1;
                 animation-duration: 0.01;
                 /* instead of animation: none, so an animationend event is 
-     * still available, if previously attached.
-     */
+                * still available, if previously attached.
+                */
                 width: auto;
                 padding-left: 0;
             }
@@ -100,7 +98,7 @@
     </style>
     <script>
         function roll() {
-
+            document.getElementById("title").className = "marquee"
         }
     </script>
 </head>
@@ -108,15 +106,16 @@
 <body>
     <div id="container">
         <header>
-            <h1 class="height-50 align-center">
-                <span>Receitas SKATEeveryday</span>
+            <h1 id="title" class="height-50 align-center" onclick="roll()">
+                <span>🍽 Receitas SKATEeveryday 🛹</span>
             </h1>
         </header>
         <main>
             <h1 class="align-center anime-roll">Filé a parmegianna</h1>
-            <div id="preview" class="align-center">
+            <div id="preview">
                 <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg"
-                    alt="Preview da receita" title="Prato pronto" />
+                    onclick="window.open('https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg');"
+                    loading="lazy" alt="Preview da receita" title="Prato pronto" />
             </div>
             <div>
                 <h2 class="align-center">
@@ -144,7 +143,7 @@
                 <ul>
                     <li>1/2 kg de bife de alcatra</li>
                     <li>3 dentes de alho amassados</li>
-                    <li> Pimenta-do-reino a gosto</li>
+                    <li>Pimenta-do-reino a gosto</li>
                     <li>Sal a gosto</li>
                     <li>1 pitada de cominho em pó</li>
                     <li>Sálvia a gosto</li>
@@ -203,6 +202,17 @@
                     <li>Leve ao forno ja aquecido por dez minutinhos so para derreter o queijo. Bom apetite.
                     </li>
                 </ol>
+                <p>
+                    <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/187602/187602_original.jpg" alt=""
+                        loading="lazy">
+                </p>
+                <p><img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg" alt=""
+                        loading="lazy"></p>
+                <p> <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/32336/32336_original.jpg" alt=""
+                        loading="lazy"></p>
+                <p><img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/11135/11135_original.jpg" alt=""
+                        loading="lazy"></p>
+
             </div>
         </main>
         <footer></footer>
