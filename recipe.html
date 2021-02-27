@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevEveryday - Receipts - Parmegianna</title>
     <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
         #container {
             border: 3px solid rgba(250, 122, 2, 0.829);
             padding-left: 1pt;
@@ -23,6 +26,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            cursor:zoom-in;
         }
 
         main {
@@ -44,6 +48,23 @@
 
         .align-center {
             text-align: center;
+        }
+
+        ul {
+            line-height: 40px;
+        }
+
+        ol {
+            line-height: 30px;
+        }
+
+        ul:hover{
+            border: 0.9px  rgba(241, 147, 38, 0.815) solid;
+
+        }
+
+        ol:hover{
+            border: 0.9px  rgba(241, 147, 38, 0.815) solid;
         }
 
         li:hover {
@@ -100,13 +121,19 @@
         function roll() {
             document.getElementById("title").className = "marquee"
         }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            console.info(document.getElementsByTagName("footer").length);
+            document.getElementsByTagName("footer")[0].innerHTML = screen.availWidth;
+        });
     </script>
 </head>
 
 <body>
     <div id="container">
         <header>
-            <h1 id="title" class="height-50 align-center" onclick="roll()">
+            <h1 id="title" class="" onclick="roll()">
                 <span>🍽 Receitas SKATEeveryday 🛹</span>
             </h1>
         </header>
@@ -114,8 +141,8 @@
             <h1 class="align-center anime-roll">Filé a parmegianna</h1>
             <div id="preview">
                 <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg"
-                    onclick="window.open('https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg');"
-                    loading="lazy" alt="Preview da receita" title="Prato pronto" />
+                    onclick="window.open(this.src);"
+                    loading="lazy" alt="Preview da receita" title="Abrir preview do prato pronto" />
             </div>
             <div>
                 <h2 class="align-center">
@@ -204,14 +231,14 @@
                 </ol>
                 <p>
                     <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/187602/187602_original.jpg" alt=""
-                        loading="lazy">
+                        loading="lazy" onclick="window.open(this.src);">
                 </p>
                 <p><img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg" alt=""
-                        loading="lazy"></p>
+                        loading="lazy" onclick="window.open(this.src);"></p>
                 <p> <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/32336/32336_original.jpg" alt=""
-                        loading="lazy"></p>
+                        loading="lazy" onclick="window.open(this.src);"></p>
                 <p><img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/11135/11135_original.jpg" alt=""
-                        loading="lazy"></p>
+                        loading="lazy" onclick="window.open(this.src);"></p>
 
             </div>
         </main>
