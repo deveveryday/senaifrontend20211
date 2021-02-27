@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevEveryday - Receipts - Parmegianna</title>
     <style>
-        body{
+        body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+
+
+
         #container {
             border: 3px solid rgba(250, 122, 2, 0.829);
             padding-left: 1pt;
@@ -21,12 +24,20 @@
             font-family: sans-serif;
         }
 
-        #container img {
+        #logo {
+            width: 273px;
+        }
+
+        #container #preview img {
             height: 300px;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            cursor:zoom-in;
+            cursor: zoom-in;
+        }
+
+        .orange{
+            color:rgb(252, 119, 42)
         }
 
         main {
@@ -58,13 +69,13 @@
             line-height: 30px;
         }
 
-        ul:hover{
-            border: 0.9px  rgba(241, 147, 38, 0.815) solid;
+        ul:hover {
+            border: 0.9px rgba(241, 147, 38, 0.815) solid;
 
         }
 
-        ol:hover{
-            border: 0.9px  rgba(241, 147, 38, 0.815) solid;
+        ol:hover {
+            border: 0.9px rgba(241, 147, 38, 0.815) solid;
         }
 
         li:hover {
@@ -133,6 +144,7 @@
 <body>
     <div id="container">
         <header>
+            <img id="logo" src="https://img.itdg.com.br/tdg/assets/layout/logos/logo-v4.png" alt="">
             <h1 id="title" class="" onclick="roll()">
                 <span>🍽 Receitas SKATEeveryday 🛹</span>
             </h1>
@@ -141,11 +153,11 @@
             <h1 class="align-center anime-roll">Filé a parmegianna</h1>
             <div id="preview">
                 <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg"
-                    onclick="window.open(this.src);"
-                    loading="lazy" alt="Preview da receita" title="Abrir preview do prato pronto" />
+                    onclick="window.open(this.src);" loading="lazy" alt="Preview da receita"
+                    title="Abrir preview do prato pronto" />
             </div>
             <div>
-                <h2 class="align-center">
+                <h2 class="align-center" class="orange">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
                         height="24" viewBox="0 0 24 24">
                         <defs>
