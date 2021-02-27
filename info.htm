@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="info.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --deg: -2deg;
+        }
+
+        .rotate {
+
+            transform: rotate(var(--deg));
+
+
+            /* Legacy vendor prefixes that you probably don't need... */
+
+            /* Safari */
+            -webkit-transform: rotate(var(--deg));
+
+            -webkit-transition: -webkit-transform 0.15s ease-in-out;
+
+            /* Firefox */
+            -moz-transform: rotate(var(--deg));
+
+            /* IE */
+            -ms-transform: rotate(var(--deg));
+
+            /* Opera */
+            -o-transform: rotate(var(--deg));
+
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="SKATEeveryday"></div>
+    </div>
+    <p></p>
+    <noscript>
+
+        <div>
+            this browser is fucked
+            <br />
+            try to enable the javascript
+        </div>
+
+    </noscript>
+</body>
+
+</html>
