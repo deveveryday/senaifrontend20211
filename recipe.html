@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevEveryday - Receipts - Parmegiana</title>
+    <style>
+
+        #container {
+            border: 3px solid rgba(250, 122, 2, 0.829);
+            padding-left: 1pt;
+            padding-right: 1pt;
+            width: 100%;
+            max-width: 1300px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: sans-serif;
+        }
+
+        #container img{
+            width: 100%;
+        }
+
+        main {
+            width: 80%;
+            margin: auto;
+        }
+
+        header h1 {
+            color: white;
+            background-color: rgba(250, 122, 2, 0.829);
+            text-align: center;
+            margin-top: 1pt;
+        }
+
+        .height-50 {
+            padding-top: 15pt;
+            height: 50pt;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        li:hover {
+            opacity: 0.7;
+        }
+
+        .anime-roll {}
+
+
+
+        .marquee {
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .marquee span {
+            display: inline-block;
+            width: max-content;
+
+            padding-left: 100%;
+            /* show the marquee just outside the paragraph */
+            will-change: transform;
+            animation: marquee 10s linear infinite;
+            animation-direction: alternate;
+        }
+
+        .marquee span:hover {
+            animation-play-state: paused
+        }
+
+
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-90%, 0);
+            }
+        }
+
+
+        /* Respect user preferences about animations */
+
+        @media (prefers-reduced-motion: reduce) {
+            .marquee span {
+                animation-iteration-count: 1;
+                animation-duration: 0.01;
+                /* instead of animation: none, so an animationend event is 
+     * still available, if previously attached.
+     */
+                width: auto;
+                padding-left: 0;
+            }
+        }
+    </style>
+    <script>
+        function roll() {
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 class="height-50 align-center">
+                <span>Receitas SKATEeveryday</span>
+            </h1>
+        </header>
+        <main>
+            <h1 class="align-center anime-roll">Filé a parmegianna</h1>
+            <div id="preview" class="align-center">
+                <img src="https://img.itdg.com.br/tdg/images/recipes/000/001/534/294412/294412_original.jpg"
+                    alt="Preview da receita" title="Prato pronto" />
+            </div>
+            <div>
+                <h2 class="align-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <defs>
+                            <clipPath id="b">
+                                <rect width="24" height="24"></rect>
+                            </clipPath>
+                        </defs>
+                        <g id="a" clip-path="url(#b)">
+                            <g transform="translate(2 2)">
+                                <path
+                                    d="M158.4,279.684a3.226,3.226,0,0,0,3.223,3.223h1.18a3.226,3.226,0,0,0,3.223-3.223V277H158.4Zm1.172-1.512h5.281v1.512a2.053,2.053,0,0,1-2.051,2.051h-1.18a2.056,2.056,0,0,1-2.051-2.051Z"
+                                    transform="translate(-152.212 -266.18)"></path>
+                                <path d="M204,216.2h4.063v1.172H204Z" transform="translate(-196.031 -207.755)"></path>
+                                <path
+                                    d="M19.145,15.555a.315.315,0,0,1-.316-.316V11.273A1.49,1.49,0,0,0,17.34,9.785H16.5v-1.9L14.668,4.875V0h-3.7V2.313a.969.969,0,1,1-1.937,0V0H5.34V4.875L3.5,7.883v1.9H2.66a1.49,1.49,0,0,0-1.488,1.488v3.965a.315.315,0,0,1-.316.316H0v1.172H.855a1.49,1.49,0,0,0,1.488-1.488V11.273a.315.315,0,0,1,.316-.316H3.5V20H16.5V10.957h.836a.315.315,0,0,1,.316.316v3.965a1.49,1.49,0,0,0,1.488,1.488H20V15.555Zm-3.812,3.273H4.668V8.211L6.5,5.2V1.172H7.855V2.313a2.141,2.141,0,1,0,4.281,0V1.172h1.352V5.2l1.836,3.008V18.828Z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    Ingredientes
+                </h2>
+                <ul>
+                    <li>1/2 kg de bife de alcatra</li>
+                    <li>3 dentes de alho amassados</li>
+                    <li> Pimenta-do-reino a gosto</li>
+                    <li>Sal a gosto</li>
+                    <li>1 pitada de cominho em pó</li>
+                    <li>Sálvia a gosto</li>
+                    <li>1 colher de chá de alecrim</li>
+                    <li>2 colheres de oléo de soja ou azeite</li>
+                    <li>1 colher de vinagre</li>
+                    <li>Farinha de trigo para empanar</li>
+                    <li>2 ovos inteiros para empanar</li>
+                    <li>Farinha de rosca para empanar</li>
+                    <li>Óleo suficiente para fritar os bifes</li>
+                </ul>
+                <h2 class="align-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+                        height="24" viewBox="0 0 24 24">
+                        <defs>
+                            <clipPath id="b">
+                                <rect width="24" height="24"></rect>
+                            </clipPath>
+                        </defs>
+                        <g id="a" clip-path="url(#b)">
+                            <g transform="translate(2 4)">
+                                <g transform="translate(1.955)">
+                                    <path
+                                        d="M46.543,2.128a1.43,1.43,0,0,0,.163-.657,1.471,1.471,0,0,0-2.943,0,1.446,1.446,0,0,0,.163.657C40.411,2.307,37.2,3.205,37.2,4.771a.418.418,0,0,0,.42.42H52.849a.422.422,0,0,0,.42-.42C53.269,3.205,50.069,2.3,46.543,2.128ZM45.256.846a.62.62,0,1,1-.62.62A.621.621,0,0,1,45.256.846ZM38.34,4.367c.778-.7,3.311-1.44,6.915-1.44v.016c3.6,0,6.138.741,6.915,1.419H38.34Z"
+                                        transform="translate(-37.2)"></path>
+                                </g>
+                                <g transform="translate(3.468 7.22)">
+                                    <path
+                                        d="M66.42,137.4a.422.422,0,0,0-.42.42v4.519a.42.42,0,1,0,.841,0V137.82A.418.418,0,0,0,66.42,137.4Z"
+                                        transform="translate(-66 -137.4)"></path>
+                                </g>
+                                <g transform="translate(0 5.707)">
+                                    <path
+                                        d="M19.58,110.224H18.024v-1.2a.422.422,0,0,0-.42-.42H2.417a.422.422,0,0,0-.42.42v1.2H.42a.42.42,0,1,0,0,.841H2v6.206a2.377,2.377,0,0,0,2.585,2.522H15.476A2.345,2.345,0,0,0,18,117.271v-6.206H19.58a.42.42,0,1,0,0-.841Zm-2.4,7.047a1.508,1.508,0,0,1-1.682,1.682H4.572a1.56,1.56,0,0,1-1.745-1.682v-7.83H17.183Z"
+                                        transform="translate(0 -108.6)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    Modo de preparo
+                </h2>
+                <ol>
+                    <li>Coloque todos os ingredientes do tempero em um vasilha e acrescentes os bifes, deixe pegar gosto
+                        por alguns minutos.</li>
+                    <li>Em outras vasilhas coloque separadamente a farinha de trigo, os ovos e a farinha de rosca.</li>
+                    <li>Passe os bifes primeiro na farinha de trigo, depois nos ovos ligeiramente batidos e em seguida
+                        passe na farinha de rosca. Frite-os em oleo quente. Reserve. Cozinhe o macarrão e prepare o
+                        molho.</li>
+                    <li>Em uma panela coloque a manteiga, a cebola, o tomate e refogue até eles darem uma murchadinha.
+                    </li>
+                    <li>Acrescente o molho de tomate e tempere com orégano e manjerona, deixe levantar fervura e coloque
+                        o queijo ralado e desligue o fogo, acrescente o macarrão cozido e misture bem.</li>
+                    <li>Em uma travessa, coloque o macarrao com o molho, os bifes fritos a milanesa e por último as
+                        fatias do queijo mussarela.
+                    </li>
+                    <li>Leve ao forno ja aquecido por dez minutinhos so para derreter o queijo. Bom apetite.
+                    </li>
+                </ol>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
